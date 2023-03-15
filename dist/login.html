@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="html-class" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.f92f0ca8.css">
+    <!-- <link rel="stylesheet" href="css/style.scss" /> -->
+    <link rel="stylesheet" href="/login.e298abc0.css">
+    <link rel="stylesheet" href="/index.94204eff.css">
+
+    <link href="https://fonts.cdnfonts.com/css/gotham?styles=17581,17585,17579" rel="stylesheet">
+
+    <title>Bab AlSaray Account</title>
+  </head>
+  <body class="html-body">
+    <main>
+      <div class="container">
+        <section class="section-cta" id="cta">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Check your invoices
+                <!-- Get your first service for free! -->
+              </h2>
+              <p class="cta-text">
+                Login by your mobile, then confirm !
+                <!-- Start your request, we will contact you ASAP -->
+              </p>
+
+              <div class="cta-form">
+                <div class="my-row">
+                  <select id="select-where" class="select-box my-select-border-left" onchange="copyCountryCodeValue()">
+                    <option value="971">United Arab Emirates</option>
+                    <option value="213">Algeria</option>
+                    <option value="973">Bahrain</option>
+                    <option value="235">Chad</option>
+                    <option value="964">Iraq</option>
+                    <option value="962">Jordan</option>
+                    <option value="965">Kuwait</option>
+                    <option value="961">Lebanon</option>
+                    <option value="218">Libya</option>
+                    <option value="222">Mauritania</option>
+                    <option value="212">Morocco</option>
+                    <option value="968">Oman</option>
+                    <option value="970">Palestine</option>
+                    <option value="972">Palestine</option>
+                    <option value="974">Qatar</option>
+                    <option value="966">Saudi Arabia</option>
+                    <option value="211">Sudan</option>
+                    <option value="249">Sudan</option>
+                    <option value="252">Somalia</option>
+                    <option value="253">Djibouti</option>
+                    <option value="963">Syria</option>
+                    <option value="216">Tunisia</option>
+
+                    <option value="967">Yemen</option>
+                  </select>
+
+                  <div class="country-code">
+                    <input class="my-input" name="country-code" disabled="" id="country-code" type="text" value="971">
+                  </div>
+                  <div>
+                    <input id="phone" class="my-input btn-form-rounded-right" type="text" required="" autofocus="" pattern="[0-9]{2}[0-9]{3}[0-9]{4}">
+                  </div>
+                </div>
+                <div class="my-row">
+                  <div id="recaptcha-container" class="recaptcha-container"></div>
+                </div>
+                <!-- <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                  />
+                </div> -->
+                <div class="my-row">
+                  <button id="send-no-button" onclick="signIn()" class="my-btn" disabled="">
+                    Sign in now
+                  </button>
+                  <div class="user-exist">
+                    <a id="sign-button" onclick="useThisNo()" class="my-btn">
+                      Use this No
+                    </a>
+                    <button id="logout-button" onclick="logOut()" class="my-btn">
+                      Log out
+                    </button>
+                  </div>
+                </div>
+                <div class="spacer10"></div>
+              </div>
+              <div class="code-verify">
+                <div class="cta-form">
+                  <small class="small">Check your SMS to get the code, update it below.</small>
+                  <div class="my-row">
+                    <div>
+                      <input id="code" class="my-input input-round" type="text" required="" pattern="[0-9]{2}[0-9]{3}[0-9]{4}">
+                    </div>
+                  </div>
+                  <div class="my-row">
+                    <button id="verify-button" type="button" onclick="verify()" class="my-btn my-btn-form" disabled="">
+                      Send Code
+                    </button>
+                  </div>
+                
+              </div>
+            </div>
+            <div class="cta-image-box" role="img" aria-label="sliding gate"></div>
+          </div>
+         
+          <!-- <a href="index.html" class="my-btn btn--full margin-right-sm mt-2"
+            ><i class="bi bi-house me-2"></i>Home</a
+          > -->
+        </div></section>
+      </div>
+    </main>
+    
+    <script src="/login.f50b2421.js" defer=""></script>
+  </body>
+</html>
