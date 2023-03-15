@@ -10,7 +10,7 @@
 
         "files": [
           "**/**",
-          "server.js",
+          "index.js",
           "notiondatabase.js",
           "package.json",
           "package-lock.json"
