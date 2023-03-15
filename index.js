@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 
 const newEntryToDatabase = moduleToFetch.newEntryToDatabase;
 
-app.listen(8080, console.log(`Server started on ${8080}`));
+app.listen(3000, console.log(`Server started on ${3000}`));
 
 app.post("/submit-form", async (req, res) => {
   const name = req.body.name;
