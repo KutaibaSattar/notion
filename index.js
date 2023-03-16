@@ -21,7 +21,7 @@ const moduleToFetch = require("./notiondatabase");
 // app.get("/users", async (req, res) => {
 //   const users = await getDataBase;
 // });
-app.get("/", (req, res) => {
+app.get("/api/users", (req, res) => {
   res.send("Welcome to your server");
 });
 
@@ -30,13 +30,14 @@ const newEntryToDatabase = moduleToFetch.newEntryToDatabase;
 app.listen(3000, console.log(`Server started on ${3000}`));
 
 app.post("/submit-form", async (req, res) => {
-  const name = req.body.name;
-  const phone = req.body.phone;
-  const comment = req.body.comment;
-  const location = req.body.location;
+  res.send("Welcome to your server POST");
+  // const name = req.body.name;
+  // const phone = req.body.phone;
+  // const comment = req.body.comment;
+  // const location = req.body.location;
 
-  // console.log("I am submit");
-  await newEntryToDatabase(name, phone, comment, location);
-  res.redirect("https://seraime.com");
-  res.end();
+  // // console.log("I am submit");
+  // await newEntryToDatabase(name, phone, comment, location);
+  // res.redirect("https://seraime.com");
+  // res.end();
 });
